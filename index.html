@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap css connection -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- ApexCharts connection -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- Font Awesome icons connection -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- Css connection -->
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Profitlingua</title>
+</head>
+<body>
+  <!-- Navbar section starts -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#home"> <span class="brand__red">Pro</span> fitlingua</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar-nav ms-auto mx-1 p-2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#chart">Progress</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#advantages">Advantages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#questions">Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline-primary px-4" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar section ends -->
+
+  <!-- Banner section starts -->
+  <section id="home" class="banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 banner-wrap ">
+          <h1 class="banner-title mt-5">WEBSITE TEXTS</h1>
+          <h3 class="banner-about">„Recruitment of nursing professionals from abroad“</h3>
+          <p class="banner-text">The alarming shortage of qualified nursing staff in Germany is an ongoing hot topic. If you also have
+          problems filling vacancies and have the feeling that the german talent pool has already been exhausted,
+          you have come to the right place. </p>
+          <!-- animated button starts -->
+          <button class="btn btn-outline-primary banner-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Read More</button>
+
+        <div class="offcanvas bg-dark offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close bg-secondary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p class="">According to the German Economic Institute, the number of employees missing in nursing care will
+              increase to almost 500,000 by the year 2035, which makes <strong>now</strong> the right time to prepare for the
+              upcoming personnel crisis.</p><hr>
+              <p>Let us help you find your dream staff abroad and easily fill your vacant positions with excellent and
+                hardworking colleagues!</p>
+          </div>
+        </div>
+          <!-- animated button ends -->
+        </div>
+        <div class="col-lg-6 col-md-12 banner-sign mt-5">
+          <h2>Let's sign in</h2>
+          <form>
+            <div class="user-form">
+              <input type="text" placeholder="Username">
+            </div>
+            <div class="user-form">
+              <input type="password" placeholder="Password">
+            </div>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Submit
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner section ends -->
+
+  <!-- about section starts -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="about-title text-center">About <span>Us</span> </h2>
+      <div class="row my-5 d-flex align-items-center">
+        <div class="about-img col-lg-6">
+          <img class="w-100" src="https://www.guidingtech.com/wp-content/uploads/Top-Ways-to-Fix-Brightness-Not-Working-on-Windows-11-Laptops-1.jpg"alt="Profitlingua">
+        </div>
+        <div class="about-box col-lg-6">
+          <h3 class="about-box__title text-center">From zero to hero</h3>
+          <p class="about-box__text">We are proud to be the only recruiting company on the market which truly knows their candidates and
+          provides them and their future employers support throughout the whole process - with a personal touch.
+          Thanks to our longterm partnership with the Professional IT and language academy <span>“Profitlingua”</span>
+          language school in Tashkent, Uzbekistan, we are ready to provide you qualified personnel with a truly
+          good knowledge of the German language.
+          Just as we get to know our students during the unique and innovative high intense courses, you will have
+          the possibility to get to know your future colleagues. </p>
+          <div class="box">
+            <div class="about-box__first">
+              <a class="progress-title" href="#">Experience</a>
+              <a href="#" class="progress-value mx-5">25%</a>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 25%;"></div>
+            </div>
+            <div class="about-box__first">
+              <a class="progress-title" href="#">Designing</a>
+              <a href="#" class="progress-value mx-5">36%</a>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 36%;"></div>
+            </div>
+            <div class="about-box__first">
+               <a class="progress-title" href="#">Development</a>
+            <a class="progress-value mx-5" href="#">87%</a>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 87%;"></div>
+            </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about section ends -->
+
+  <!-- Progress section starts -->
+  <h3 class="diagram-title text-center">Work <span>Progress</span></h3>
+  <div id="chart" class="container my-3 diagram"></div>
+  <!-- Progress section ends -->
+
+  <!-- Advantages section starts -->
+  <seciton id="advantages" class="advantages">
+    <div class="container">
+      <div class="advan-title__wrap text-center">
+        <h4 class="advan-title__text mt-5">Why Traum Personal Gmbh?</h4>
+        <h2 class="advan-title">Advantages</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card my-5 card__first" style="width: 18rem;">
+            <a class="icon" href="#"><i class="fa-regular fa-handshake"></i></a>
+            <div class="card-body">
+              <h5 class="card-title mb-3">Qualified personnel</h5>
+              <p class="card-text">…which stays. Provide an opportunity and get a loyal and grateful worker in return. Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card my-5" style="width: 18rem;">
+            <a class="icon icon__first" href="#"><i class="fa-regular fa-address-card"></i></a>
+            <div class="card-body">
+              <h5 class="card-title mb-3">No extra effort</h5>
+              <p class="card-text">We will take care of all paperwork so you can focus on what’s important</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card my-5" style="width: 18rem;">
+            <a class="icon icon__second" href="#"><i class="fa-regular fa-hourglass-half"></i></a>
+            <div class="card-body">
+              <h5 class="card-title mb-3">Fast Process</h5>
+              <p class="card-text">Your new colleagues can already start their working process in less than a year from signing the cooperation contract</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card my-5" style="width: 18rem;">
+            <a class="icon icon__third" href="#"><i class="fa-regular fa-window-restore"></i></a>
+            <div class="card-body">
+              <h5 class="card-title mb-3">Plan Ahead</h5>
+              <p class="card-text">The German population along with
+                their nursing staff is aging. With our help, you can easily plan ahead and prepare for the retirement of your</p>
+            </div>
+          </div>
+        </div>  
+        <div class="col-lg-4">
+          <div class="card my-5" style="width: 18rem;">
+            <a class="icon icon__fourth" href="#"><i class="fa-regular fa-user"></i></a>
+            <div class="card-body">
+              <h5 class="card-title mb-2">Service A-Z</h5>
+              <p class="card-text">Thanks to having our language school abroad our longterm cooperation with Kulturakademie Dresden,we are able to provide you A-Z service</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card my-5" style="width: 18rem;">
+            <a class="icon icon__fifth" href="#"><i class="fa-regular fa-star"></i></a>
+            <div class="card-body">
+              <h5 class="card-title mb-3">Personal Approach</h5>
+              <p class="card-text">We “create” your dream staff from scratch and get to know them well during the process, so will you! </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </seciton>
+  <!-- Advantages section ends -->
+
+  <!-- Questions section starts -->
+  <section id="questions" class="questions">
+    <div class="container">
+      <h3 class="que-title my-5 text-center">Why is <span>Uzbekistan</span> the best place to look for new colleagues? </h3>
+      <div class="row my-5 d-flex align-items-center">
+        <div class="que-text col-lg-6">
+          Uzbekistan is a beautiful diverse country located in Central Asia. The history goes back more than two
+          thousand years, offering many cultural, geographical and religious attractions. The capital city Tashkent is
+          a modern metropolis, full of educated and talented hard working people, waiting for the opportunity to
+          make their dreams come true, perhaps in Germany.. <br><br>
+          Why do we think that Uzbekistan is the hottest place for recruiting right now?
+          <div class="vl"></div>
+        </div>
+        <div class="que-questions col-lg-6">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  High quality personnel
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse bg-dark" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    The Uzbek educational system is of very high quality, your new colleagues will
+                    be able to start working immediately and perform all required tasks properly and responsibly right
+                    away.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Bilingualism
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse bg-dark" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Uzbekistan is a diverse country. Aside from Uzbek, which is a language very similar to
+                  Turkish, most people can also speak Russian and English, which makes the nursing staff be able to
+                  understand and treat patients of many different ethnicities.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Admirable human nature
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse bg-dark" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Originating from Central Asia, Uzbeks are some of the most hardworking,
+                  helpful and respectful people in the world, similar like the Filipinos. Your working team will profit from
+                  their character
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Financial aspect
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse bg-dark" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  The nursing staff in Uzbekistan is highly underpaid. Give them an opportunity to work
+                  in Germany and they will repay you with their gratitude. 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Questions section ends -->
+
+  <!-- Bootstrap js connection -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- js conncetion -->
+  <script src="./js/app.js"></script>
+</body>
+</html>
