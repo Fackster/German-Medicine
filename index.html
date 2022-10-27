@@ -11,6 +11,7 @@
   <!-- Font Awesome icons connection -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
+  <!-- AOS connection -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Css connection -->
   <link rel="stylesheet" href="./css/main.css">
@@ -20,7 +21,7 @@
   <!-- Navbar section starts -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="#home"> <span class="brand__red">Pro</span> fitlingua</a>
+      <a class="navbar-brand" href="#home"> <span class="brand__red">Med</span> icine</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,16 +29,16 @@
         <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navbar-nav ms-auto mx-1 p-2">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#chart">Progress</a>
+            <a class="nav-link" href="#advantages">Advantages</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#advantages">Advantages</a>
+            <a class="nav-link" href="#chart">Progress</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#questions">Questions</a>
@@ -46,9 +47,6 @@
             <a class="nav-link" href="#contacts">Contacts</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <button class="btn btn-outline-primary px-4" type="submit">Sign Up</button>
-        </form>
       </div>
     </div>
   </nav>
@@ -58,48 +56,14 @@
   <section id="home" class="banner">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 col-md-12 banner-wrap " data-aos="fade-up"
-        data-aos-duration="3000">
-          <h1 class="banner-title mt-5">WEBSITE TEXTS</h1>
+        <div class="col-lg-6 col-md-12 banner__wrap">
+          <h1 class="banner-title">MEDICINE</h1>
           <h3 class="banner-about">„Recruitment of nursing professionals from abroad“</h3>
           <p class="banner-text">The alarming shortage of qualified nursing staff in Germany is an ongoing hot topic. If you also have
           problems filling vacancies and have the feeling that the german talent pool has already been exhausted,
           you have come to the right place. </p>
-          <!-- animated button starts -->
-          <button class="btn btn-outline-primary banner-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Read More</button>
-
-        <div class="offcanvas bg-dark offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-            <button type="button" class="btn-close bg-secondary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <p class="">According to the German Economic Institute, the number of employees missing in nursing care will
-              increase to almost 500,000 by the year 2035, which makes <strong>now</strong> the right time to prepare for the
-              upcoming personnel crisis.</p><hr>
-              <p>Let us help you find your dream staff abroad and easily fill your vacant positions with excellent and
-                hardworking colleagues!</p>
-          </div>
-        </div>
-          <!-- animated button ends -->
         </div>
         <div class="col-lg-6 col-md-12 banner-sign mt-5">
-          <h2>Let's sign in</h2>
-          <form>
-            <div class="user-form">
-              <input type="text" placeholder="Username">
-            </div>
-            <div class="user-form">
-              <input type="password" placeholder="Password">
-            </div>
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Submit
-            </a>
-          </form>
         </div>
       </div>
     </div>
@@ -109,8 +73,8 @@
   <!-- about section starts -->
   <section id="about" class="about">
     <div class="container">
-      <h2 class="about-title text-center">About <span>Us</span> </h2>
-      <div class="row my-5 d-flex align-items-center">
+      <div class="row d-flex align-items-center">
+        <h2 class="about-title text-center my-5">About <span>Us</span> </h2>
         <div class="about-img col-lg-6">
           <img class="w-100" src="https://www.guidingtech.com/wp-content/uploads/Top-Ways-to-Fix-Brightness-Not-Working-on-Windows-11-Laptops-1.jpg"alt="Profitlingua">
         </div>
@@ -151,19 +115,15 @@
   </section>
   <!-- about section ends -->
 
-  <!-- Progress section starts -->
-  <h3 class="diagram-title text-center">Work <span>Progress</span></h3>
-  <div id="chart" class="container my-3 diagram"></div>
-  <!-- Progress section ends -->
-
-  <!-- Advantages section starts -->
-  <seciton id="advantages" class="advantages">
+   <!-- Advantages section starts -->
+   <seciton id="advantages" class="advantages">
     <div class="container">
-      <div class="advan-title__wrap text-center">
-        <h4 class="advan-title__text mt-5">Why Traum Personal Gmbh?</h4>
-        <h2 class="advan-title">Advantages</h2>
-      </div>
-      <div class="row">
+      <div class="row" data-aos="fade-up"
+        data-aos-duration="800">
+        <div class="advan-title__wrap text-center">
+          <h4 class="advan-title__text">Why Traum Personal Gmbh?</h4>
+          <h2 class="advan-title">Advantages</h2>
+        </div>
         <div class="col-lg-4">
           <div class="card my-5 card__first" style="width: 18rem;">
             <a class="icon" href="#"><i class="fa-regular fa-handshake"></i></a>
@@ -224,12 +184,20 @@
   </seciton>
   <!-- Advantages section ends -->
 
+  <!-- Progress section starts -->
+  <div id="chart" class="diagram bg-light">
+    <div class="row">
+      <h3 class="diagram-title mt-3 text-center">Work <span>Progress</span></h3>
+    </div>
+  </div>
+  <!-- Progress section ends -->
+
   <!-- Questions section starts -->
-  <section id="questions" class="questions">
+  <section id="questions" class="questions py-5">
     <div class="container">
-      <h3 class="que-title my-5 text-center">Why is <span>Uzbekistan</span> the best place to look for new colleagues? </h3>
-      <div class="row my-5 d-flex align-items-center">
-        <div class="que-text col-lg-6">
+      <h3 class="que-title text-center text-light mb-5" data-aos="zoom-in">Why is <span>Uzbekistan</span> the best place to look for new colleagues? </h3>
+      <div class="row d-flex align-items-center">
+        <div class="que-text col-lg-6" data-aos="zoom-in-right">
           Uzbekistan is a beautiful diverse country located in Central Asia. The history goes back more than two
           thousand years, offering many cultural, geographical and religious attractions. The capital city Tashkent is
           a modern metropolis, full of educated and talented hard working people, waiting for the opportunity to
@@ -238,7 +206,7 @@
           <div class="vl"></div>
         </div>
         <div class="que-questions col-lg-6">
-          <div class="accordion" id="accordionExample">
+          <div class="accordion mt-4" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -301,9 +269,56 @@
   </section>
   <!-- Questions section ends -->
 
+  <!-- Footer section starts -->
+  <div id="contacts" class="app bg-light py-5">
+    <div class="container">
+      <h3 class="app-title text-center pb-3">For applicants </h3>
+      <div class="app-wrap text-center">
+        Make your dreams come true and take the first step towards your career in Germany! Let us guide you through the
+        way and help you on every single step of the journey. <br>
+        Do not hesitate to contact us anytime for further information at <span>info@traum-personal.de</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact bg-light">
+    <div class="container">
+      <div class="row pb-5">
+        <div class="line"><hr></div>
+        <h3 class="footer-title pt-4 pb-5 text-center">Contacts</h3>
+        <div class="col-lg-5 first-column">
+          <h3 class="column-title">Traum Personal GmbH </h3>
+          <p class="address"> <span>Address:</span> Bambergerstraße 7 Str.</p>
+          <p class="address-num"> <span>Address Number:</span> 01187 Dresden</p>
+          <p class="country"> <span>Country:</span> Germany</p>
+        </div>
+        <div class="col-lg-5 second-column">
+          <h3 class="column-title">Connections</h3>
+          <p class="address"> <span>E-Mail:</span>  info@traum-personal.de</p>
+          <p class="address-num"> <span>Telephone:</span> +49 301234567</p>
+          <p class="country"> <span>Country:</span> Germany</p>
+        </div>
+        <div class="col-lg-2">
+          <h3 class="column-title">Social Medias</h3>
+          <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.telegram.com/"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p class="footer-text text-center py-5 text-light">© 2022 MEDICINE. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer section ends -->
+
   <!-- Bootstrap js connection -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
+  <!-- AOS js connection -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

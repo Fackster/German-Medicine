@@ -40,6 +40,7 @@ var options = {
   chart: {
   type: 'bar',
   height: 480,
+  // width: 1500
 },
 xaxis: {
   type: 'category',
@@ -51,9 +52,9 @@ xaxis: {
   group: {
     style: {
       fontSize: '16px',
-      fontWeight: 300,
+      fontWeight: 700,
       fontFamily: 'Montserrat',
-      colors:['#fff']
+      colors:['#000']
     },
     groups: [
       { title: '2015 ~ 2025', cols: 3 },
@@ -67,7 +68,7 @@ title: {
   style: {
     colors: ['#F44336'],
     fontFamily: 'Montserrat',
-    fontWeight: 300,
+    fontWeight: 400,
     fontSize: '18px',
   },
 }
