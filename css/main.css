@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 :root {
-  --bg-blue: #0091EA;
+  --bg-blue: #20A0D8;
   --dark: #000;
   --light: rgb(238, 238, 238);
   --color: rgb(17, 0, 255);
@@ -20,7 +20,7 @@
 
 body {
   color: var(--dark);
-  background-color: var(--bg-blue);
+  background-color: var(--light);
 }
 
 /* Styling the navbar seciton starts */
