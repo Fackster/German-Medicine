@@ -40,15 +40,9 @@ var options = {
   chart: {
   type: 'bar',
   height: 480,
-  // width: 1500
 },
 xaxis: {
   type: 'category',
-  // labels: {
-  //   formatter: function(val) {
-  //     return "Q" + dayjs(val).quarter()
-  //   }
-  // },
   group: {
     style: {
       fontSize: '16px',
@@ -72,13 +66,6 @@ title: {
     fontSize: '18px',
   },
 }
-// tooltip: {
-//   x: {
-//     formatter: function(val) {
-//       return "Q" + dayjs(val).quarter() + " " + dayjs(val).format("YYYY")
-//     }  
-//   }
-// },
 };
 
 var chart = new ApexCharts(document.querySelector("#chart"), options);

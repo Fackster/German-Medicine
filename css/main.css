@@ -3,11 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 :root {
-  --bg-blue: #03A9F4;
-  --dark: #000;
+  --bg-light-blue: #03A9F4;
+  --bg-dark-blue: #0051d2;
   --bg-light: #fff;
-  --light-color: rgb(255, 255, 255);
-  --light-blue: #03A9F4;
+  --bg-dark: #000;
+  --text-dark: #000;
+  --text-light: rgb(255, 255, 255);
+  --text-dark-blue: #0051d2;
+  --text-light-blue: #03A9F4;
 }
 
 * {
@@ -18,22 +21,17 @@
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: var(--light);
-}
-
-/* Styling the navbar seciton starts */
+/* Styling the navbar section starts */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2000000;
+  z-index: 999;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  transition: all 0.3s ease;
-  background: transparent;
+  transition: all 0.5s ease;
+  box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-scroll {
@@ -41,46 +39,46 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 200000;
+  z-index: 999;
   padding: 20px 100px;
-  display: flex;
-  align-items: center;
-  transition: all 0.3s ease;
-  background: black;
+  transition: all 0.5s ease;
+  background: var(--bg-light);
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand {
-  color: white!important;
+  display: flex;
+  align-items: center;
+  color: var(--text-dark);
   font-family: 'Julius Sans One', sans-serif;
-  font-weight: normal;
-  font-size: 23px;
-  letter-spacing: 2px;
-}
-
-.brand__red {
-  color: var(--light-blue);
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 25px;
   letter-spacing: 2px;
-  margin-right: -10px;
 }
 
-.active {
-  border-bottom: 2px solid var(--light-blue);
-  margin-bottom: 1px;
-}
-
-.nav-item {
-  margin-right: 10px!important;
+.navbar-brand span {
+  display: flex;
+  align-items: center;
+  color: var(--text-dark-blue);
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: -2px;
+  border-bottom: 2px solid var(--text-dark-blue);
 }
 
 .nav-link {
-  color: white!important;
+  position: relative;
+  color: var(--text-dark);
   position: relative;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
+}
+
+.nav-link:hover {
+  color: var(--text-dark);
 }
 
 .nav-link::after {
@@ -90,7 +88,7 @@ body {
   left: 0;
   width: 100%;
   height: 0.1em;
-  background-color: var(--light-blue);
+  background-color: var(--text-dark-blue);
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
   margin-bottom: -3px;
@@ -106,31 +104,31 @@ body {
 .nav-link:focus::after{
   transform: scale(1);
 }
-/* Styling the navbar seciton ends */
+/* Styling the navbar section ends */
 
 /* Styling the banner section starts */
 .banner {
-  background: #fff;
-  position: relative;
   width: 100%;
-  height: 500px;
-}
-
-.banner__wrap {
-  position: absolute;
-  top: 40%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url('https://img.freepik.com/premium-photo/close-up-doctor-front-bright-background_53419-4416.jpg?w=2000');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner-title {
-  color: var(--light-color);
+  color: var(--text-dark);
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 40px;
+  letter-spacing: 2px;
 }
 
 .banner-about {
-  background: linear-gradient(to right, #2200fe,
-  #ff6600, #ff0000, #2f00ff);
+  background: var(--text-dark-blue);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-family: 'Montserrat', sans-serif;
@@ -141,62 +139,76 @@ body {
 }
 
 .banner-text {
-  color: var(--light-color);
+  color: var(--text-dark);
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 17px;
   line-height: 28px;
 }
 
-/* the sign in styling starts */
-/* the sign in styling ends */
+.banner-btn-dark {
+  display: inline-block;
+  color: var(--text-light);
+  background: var(--bg-dark-blue);
+  padding: 12px 35px;
+  outline: none;
+  border-radius: 2px;
+  transition: all 0.5s ease;
+}
 
+.banner-btn-dark:hover {
+  background-color: transparent;
+  color: var(--text-dark-blue);
+}
+
+.banner-btn {
+  display: inline-block;
+  color: var(--text-dark-blue);
+  background: transparent;
+  padding: 12px 35px;
+  outline: none;
+  border: 1px solid var(--text-dark-blue);
+  border-radius: 2px;
+  transition: all 0.5s ease;
+}
+
+.banner-btn:hover {
+  background: var(--bg-dark-blue);
+  color: var(--text-light);
+}
 /* Styling the banner section ends */
 
-/* About styling starts */
+/* The about styling starts */
 .about-title {
-  color: var(--dark);
+  color: var(--text-dark);
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 40px;
 }
 
 .about-title span {
-  color: var(--light-blue);
+  color: var(--text-dark-blue);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 40px;
 }
 
-.about-img img{
-  width: 100%;
-  height: 100%;
-}
-
-.about-img{
-  margin-bottom: 100px;
-}
-
-.about-box {
-  margin-bottom: 100px;
-}
-
 .about-box__title {
-  color: var(--dark);
+  color: var(--text-dark);
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 25px;
 }
 
 .about-box__text {
-  color: var(--dark);
+  color: var(--text-dark);
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 15px;
 }
 
 .about-box__text span {
-  color: var(--light-blue);
+  color: var(--text-dark-blue);
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 15px;
@@ -226,12 +238,15 @@ body {
   text-decoration: none;
   font-weight: 400;
   font-size: 15px;
-  /* margin-left: 410px!important; */
 }
 
 .about-img img{
-  border-radius: 5px;
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 15px 25px rgba(27, 24, 207, 0.6);
+  width: 100%;
 }
 
 .about-box__first {
@@ -264,178 +279,234 @@ body {
   font-size: 30px;
   letter-spacing: 1px;
 }
-/* Progress section styling ends */
+/* The progress section styling ends */
 
-/* Styling advantages section starts */
-
-.advan-title__text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: normal;
-  letter-spacing: 2px;
-  background: linear-gradient(to left, #37fe00,
-  #0015ff, #FD4766, #ffffff);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  margin-top: 0px!important;
+/* Styling the advantages section starts */
+.advantages {
+  background: url('https://media.istockphoto.com/photos/stethoscope-on-blue-background-picture-id866772230?k=20&m=866772230&s=612x612&w=0&h=qe_ECHvyjM6a7NSbEVfWySV-L9kOaWgJD2pfBAR-ZpU=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;  
 }
 
-.advan-title {
-  color: var(--light);
+.ad-title {
+  color: var(--text-dark);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: normal;
-  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 40px;
 }
 
 .card {
-  width: 100%!important;
-  height: 220px;
-  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 330px;
+  padding: 20px 20px;
+  border: none;
   border-radius: 5px;
-  color: var(--dark);
-  background-color: rgb(0, 45, 108);
-  box-shadow: 0 2px 2px rgba(0,0,0,.6);
-  transition: all ease 0.5s;
+  outline: none;
+  transition: all 0.5s ease;
+  margin-left: 5px;
 }
 
-.icon {
-  color: #FD4766;
-  font-size: 35px;
-  text-align: start;
-  margin-left: 20px;
+.ad-icon {
+  color: #0051d2;
+  font-size: 40px;
 }
 
-.icon:hover {
-  color: #FD4766;
-}
-
-.icon__first {
-  color: #6b60ff;
-}
-
-.icon__first:hover {
-  color: #6b60ff;
-}
-
-.icon__second {
-  color: rgb(135, 0, 135);
-}
-
-.icon__second:hover {
-  color: rgb(135, 0, 135);
-}
-
-.icon__third {
-  color: rgb(135, 0, 135);
-}
-
-.icon__third:hover {
-  color: rgb(135, 0, 135);
-}
-
-.icon__fourth {
-  color: #b781ff;
-}
-
-.icon__fourth:hover {
-  color: #b781ff;
-}
-
-.icon__fifth:hover {
-  color: #FD4766;
+.card-body {
+  color: var(--text-dark);
+  margin-top: 5px;
 }
 
 .card-title {
-  color: var(--light);
-  font-family: 'Montserrat', sans-serif;
+  color: var(--text-dark);
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 30px;
+  letter-spacing: 0px;
+  margin-bottom: 5px;
 }
 
 .card-text {
-  color: grey;
+  color: var(--text-dark);
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.ad-button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-button {
+  color: var(--bg-dark-blue);
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: all 0.5s ease;
+  border-bottom: 2px solid transparent;
+  padding-left: 10px;
+}
+
+.ad-button:hover {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-dark-blue);
+  border-bottom: 2px solid var(--text-dark-blue);
 }
 
 .card:hover {
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
-  transition: all ease 0.5s;
+  box-shadow: inset 0 -8px 10px -7px var(--bg-dark-blue);
 }
-/* Styling advantages section ends */
+/* Styling the advantages section ends */
 
 /* Styling questions section starts */
+/* Styling questions section ends */
 
-.que-title {
-  color: var(--dark);
+/* Styling the footer section starts */
+.contact {
+  background-color: rgb(238, 238, 238);
+}
+
+.footer-box {
+  background-color: rgb(238, 238, 238);
+}
+
+.footer {
+  color: var(--text-dark);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 25px;
-}
-
-.que-title span {
-  color: red;
-}
-
-.que-text {
-  position: relative;
-  color: grey;
-  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
 }
 
-.vl {
-  border-left: 3px solid red;
-  height: 175px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: -3px;
+.footer span {
+  color: var(--text-dark-blue);
+  font-weight: 400;
 }
 
-.accordion-button {
-  color: rgb(204, 204, 204)!important;
-  background: rgb(0, 0, 30)!important;
+.footer-img{
+  border-radius: 5px;
+  box-shadow: 0 20px 20px -8px rgba(0, 0, 0, 0.2);
 }
 
-.accordion-collapse {
-  color: rgb(204, 204, 204)!important;
-  background: rgb(0, 0, 30)!important;
+.footer-title {
+  color: var(--text-dark);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
 }
-/* Styling questions section ends */
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  color: var(--text-dark);
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.footer-brand span {
+  display: flex;
+  align-items: center;
+  color: var(--text-dark-blue);
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: -2px;
+  border-bottom: 2px solid var(--text-dark-blue);
+}
+
+.footer-brand-text {
+  color: rgb(81, 81, 81);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.footer-box {
+  margin-bottom: -20px;
+}
+
+.footer-text span {
+  color: var(--text-dark-blue);
+}
+
+.fa-linkedin-in {
+  background-color: var(--bg-dark-blue);
+  color: var(--text-light);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 23px;
+}
+
+.fa-instagram {
+  background: linear-gradient(45deg, rgb(255, 0, 0), rgb(0, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--text-light);
+  font-size: 23px;
+}
+
+.fa-telegram {
+  color: var(--text-dark-blue);
+  font-size: 23px;
+}
+
+.fa-youtube {
+  color: red;
+  font-size: 23px;
+}
+
+.contact-title {
+  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+}
+
+.address strong{
+  color: var(--text-dark-blue);
+}
+
+.address span {
+  color: var(--bg-dark-blue);
+}
+
+.questions-title {
+  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 0px;  
+}
+/* Styling the footer section ends */
 
 /* Media */
 @media (max-width: 992px) {
 
-  .banner__wrap {
-    position: absolute;
-    top: 30%;
-  }
-  .navbar{background: var(--bg-blue);}
-  .navbar-scroll {padding: 10px 5px;}
-  .banner {padding: 10px;}
-  .banner-title {font-size: 30px;}
-  .banner-about {font-size: 17px;}
-  .banner-text {font-size: 16px;}
+  .navbar-scroll {padding: 20px 5px;}
+  .banner-title {padding-top: 80px;}
+  .banner-about {margin-top: 10px; margin-bottom: 20px;}
+  .banner-btn-dark {padding: 10px 25px; margin-top: 20px;}
+  .banner-btn {padding: 10px 25px; margin-top: 20px;}
+  .diagram {padding: 20px 20px;}
+  .about-box__title {margin-top: 40px;}
+  .card {height: 350px;}
+  .social {margin-bottom: 30px;}
+  .contact-title {margin-top: 20px;}
+  .questions-title {margin-top: 40px;}
 
-  .banner-sign {
-    width: 100%;
-    margin-top: 30px;}
-
-  .about-box__title {margin-top: -60px;}
-  .about-img {margin-top: 10px;}
-  .box{margin-bottom: -50px;}
-  
-  .card {
-    margin-top: -20px!important;
-    /* margin-bottom: -40px!important; */
-  }
-  .card__first{margin-top: 30px!important;}
-  .diagram{padding: 10px;}
 }
