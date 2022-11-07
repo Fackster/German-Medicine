@@ -5,7 +5,7 @@
 :root {
   --bg-light-blue: #03A9F4;
   --bg-dark-blue: #0051d2;
-  --bg-light: #fff;
+  --bg-light: rgb(255, 255, 255);
   --bg-dark: #000;
   --text-dark: #000;
   --text-light: rgb(255, 255, 255);
@@ -40,32 +40,21 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  padding: 20px 100px;
+  padding: 15px 50px;
   transition: all 0.5s ease;
   background: var(--bg-light);
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-brand {
+.logo {
   display: flex;
   align-items: center;
   color: var(--text-dark);
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: 300;
-  font-size: 25px;
-  letter-spacing: 2px;
-}
-
-.navbar-brand span {
-  display: flex;
-  align-items: center;
-  color: var(--text-dark-blue);
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-  letter-spacing: 2px;
-  margin-bottom: -2px;
-  border-bottom: 2px solid var(--text-dark-blue);
+  width: 100%;
+  height: 60px;
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
 
 .nav-link {
@@ -160,22 +149,6 @@
   background-color: transparent;
   color: var(--text-dark-blue);
 }
-
-.banner-btn {
-  display: inline-block;
-  color: var(--text-dark-blue);
-  background: transparent;
-  padding: 12px 35px;
-  outline: none;
-  border: 1px solid var(--text-dark-blue);
-  border-radius: 2px;
-  transition: all 0.5s ease;
-}
-
-.banner-btn:hover {
-  background: var(--bg-dark-blue);
-  color: var(--text-light);
-}
 /* Styling the banner section ends */
 
 /* The about styling starts */
@@ -215,31 +188,6 @@
   letter-spacing: 2px;
 }
 
-.progress-title {
-  color: #606060;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 2px;
-}
-
-.progress {
-  height: 5px;
-  background: linear-gradient(45deg, red, blue);
-}
-
-.progress-bar {
-  background: var(--light-blue);
-}
-
-.progress-value {
-  color: grey;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 15px;
-}
-
 .about-img img{
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -247,14 +195,27 @@
   border-bottom-left-radius: 5px;
   box-shadow: 0 5px 10px -5px rgba(27, 24, 207, 0.6);
   width: 100%;
+  height: 500px;
 }
 
-.about-box__first {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 5px;
-  margin-bottom: 5px;
+.chart-wrap {
+  background-color: rgb(250, 250, 250);
+}
+
+.chart-text {
+  color: var(--text-light);
+
+}
+
+.chart-text span{
+  color: var(--text-dark);
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.chart-box {
+  background-color: var(--text-dark-blue);
 }
 /* About styling ends */
 
@@ -505,12 +466,12 @@
   .banner-title {padding-top: 80px;}
   .banner-about {margin-top: 10px; margin-bottom: 20px;}
   .banner-btn-dark {padding: 10px 25px; margin-top: 20px;}
-  .banner-btn {padding: 10px 25px; margin-top: 20px;}
   .diagram {padding: 20px 20px;}
   .about-box__title {margin-top: 40px;}
   .card {height: 350px;}
   .social {margin-bottom: 30px;}
   .contact-title {margin-top: 20px;}
   .questions-title {margin-top: 40px;}
+  .about-img img {height: 300px;}
 
 }
