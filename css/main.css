@@ -47,14 +47,15 @@
 }
 
 .logo {
+  width: 100%;
+  height: 60px;
   display: flex;
   align-items: center;
   color: var(--text-dark);
-  width: 100%;
-  height: 60px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 5px;
   padding: 0px;
   margin: 0px;
-  border: none;
 }
 
 .nav-link {
