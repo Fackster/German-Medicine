@@ -61,7 +61,6 @@
 .nav-link {
   position: relative;
   color: var(--text-dark);
-  position: relative;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -94,6 +93,68 @@
 .nav-link:focus::after{
   transform: scale(1);
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--text-dark-blue);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  margin-bottom: -3px;
+}
+
+.dropdown::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.dropdown:hover::after,
+.dropdown:focus::after{
+  transform: scale(1);
+}
+
+.dropdown:hover {
+  color: var(--text-dark);
+  background: transparent;
+}
+
+.btn-secondary {
+  border: none;
+  background: transparent!important;
+  color: var(--text-dark)!important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang__flag img{
+  width: 20px;
+  height: 20px;
+  background-color: rgb(250, 250, 250);
+}
+
+.lang__title {
+  color: var(--text-dark);
+}
+
+.dropdown-item:hover {
+  background: transparent;
+}
 /* Styling the navbar section ends */
 
 /* Styling the banner section starts */
@@ -115,6 +176,13 @@
   font-weight: 300;
   font-size: 40px;
   letter-spacing: 2px;
+}
+
+.banner-title span {
+  color: var(--text-dark-blue);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .banner-about {
@@ -203,40 +271,8 @@
   position: relative;
 }
 
-.overlay {
-  width: 637px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  cursor: pointer;
-  background: linear-gradient(rgba(0,0,0,0.5), var(--bg-dark-blue));
-  opacity: 0;
-  transition: all 0.5s ease;
-}
-
-.about-img:hover .overlay {
-  opacity: 1;
-}
-
 .question-img {
   position: relative;
-}
-
-.question-overlay {
-  width: 637px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  cursor: pointer;
-  background: linear-gradient(rgba(0,0,0,0.5), var(--bg-dark-blue));
-  opacity: 0;
-  transition: all 0.5s ease;
-}
-
-.question-img:hover .question-overlay {
-  opacity: 1;
 }
 
 .chart-wrap {
