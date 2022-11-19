@@ -233,14 +233,14 @@
 .about-title {
   color: var(--text-dark);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 40px;
 }
 
 .about-title span {
   color: var(--text-dark-blue);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 40px;
 }
 
@@ -342,7 +342,7 @@
 .ad-title {
   color: var(--text-dark);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 40px;
 }
 
@@ -392,21 +392,20 @@
 }
 
 .ad-button {
-  color: var(--bg-dark-blue);
+  color: var(--text-dark-blue);
   background: transparent;
   border: none;
   outline: none;
   transition: all 0.5s ease;
-  border-bottom: 2px solid transparent;
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .ad-button:hover {
   background: transparent;
   border: none;
   outline: none;
-  color: var(--text-dark-blue);
-  border-bottom: 2px solid var(--text-dark-blue);
+  transition: all 0.5s ease;
+  color: #0077ff;
 }
 /* Styling the advantages section ends */
 
@@ -418,7 +417,7 @@
 .process__title {
   color: var(--text-dark);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 40px;
   letter-spacing: 1px;
 }
@@ -515,7 +514,7 @@
 .footer-title {
   color: var(--text-dark);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 40px;
 }
 
