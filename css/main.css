@@ -21,6 +21,20 @@
   scroll-behavior: smooth;
 }
 
+.first__btn {
+  color: var(--text-light);
+  background-color: var(--bg-dark-blue);
+  padding: 50px 100px;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.first__btn:hover {
+  color: rgb(185, 185, 185);
+}
+
 /* Styling the navbar section starts */
 .navbar {
   position: fixed;
