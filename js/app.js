@@ -19,7 +19,7 @@ function toggleMenu(){
 
 var options = {
   series: [{
-  name: "sales",
+  name: " ",
   data: [{
     x: '2015',
     y: 343
@@ -58,7 +58,7 @@ xaxis: {
 },
 
 title: {
-  text: 'Bedarf Pflegekräften',
+  text: 'Bedarf an Pflegepersonal',
   style: {
     colors: ['#F44336'],
     fontFamily: 'Montserrat',
