@@ -1,4 +1,6 @@
 console.log(window.location,'fewefw')
+console.log(window.location.href,'fewefw')
+
 
 // Navbar
 const navbar = document.querySelector('.navbar');
