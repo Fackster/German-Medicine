@@ -1,15 +1,20 @@
-console.log(window.location,'fewefw')
-console.log(window.location.href,'fewefw')
+console.log(window.location,'fewefw');
+ let full_href = window.location.href.split('/');
+ let href = full_href[full_href.length - 1];
+console.log(href);
 
-
-// Navbar
-const navbar = document.querySelector('.navbar');
 window.onscroll = () => {
     if (window.scrollY > 20) {
         navbar.classList.add('navbar-scroll');
     } else {
         navbar.classList.remove('navbar-scroll');
     }
+};
+
+if (href) {
+  
+} else {
+  console.log(3);
 };
 
 function toggleMenu(){
@@ -62,7 +67,7 @@ xaxis: {
 },
 
 title: {
-  text: 'grw',
+  text: href === 'main.html' ? 'Demand for nursing staff' : 'Bedarf an Pflegepersonal' ,
   style: {
     colors: ['#F44336'],
     fontFamily: 'Montserrat',
