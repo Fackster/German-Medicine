@@ -1,3 +1,5 @@
+console.log(window.location,'fewefw')
+
 // Navbar
 const navbar = document.querySelector('.navbar');
 window.onscroll = () => {
@@ -58,7 +60,7 @@ xaxis: {
 },
 
 title: {
-  text: 'Bedarf an Pflegepersonal',
+  text: 'grw',
   style: {
     colors: ['#F44336'],
     fontFamily: 'Montserrat',
