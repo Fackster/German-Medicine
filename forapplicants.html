@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap css connection -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- ApexCharts connection -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- Font Awesome icons connection -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!-- AOS connection -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Css connection -->
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Traum</title>
+</head>
+
+<body>
+  <!-- The navbar section starts -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-logo" href="#home">
+        <img class="logo" src="./img/traum_logo.jpg" alt="">
+      </a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto p-2 d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#advantages">Advantages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="margin-left: 20px;" href="#process">Process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="#contacts">Contacts</a>
+          </li>
+          <a href="./main.html" class="nav-link">For companies</a>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              EN
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./appgerman.html">DE</a></li>
+            </ul>
+          </div>
+      </div>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <!-- The navbar section ends -->
+
+  <!-- Banner section starts -->
+  <section id="home" class="banner">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-7">
+          <h1 class="banner-title">Traum <span>Personal</span> GmbH</h1>
+          <!-- <h3 class="banner-about">„Recruitment of nursing professionals“</h3> -->
+          <p class="banner-text">
+            Make your dreams come true and take the first step towards your career in Germany! Let us guide you through
+            the
+            way and help you on every single step of the journey.
+            The demand for qualified personnel in nursing care is growing by leaps and bounds and will continue to do so
+            in the
+            upcoming years, as almost 500,000 medical job positions will be open by the year 2035.
+          </p>
+          <button class="btn btn-outline-primary banner-btn-dark">Contact Us</button>
+        </div>
+        <div class="col-lg-5"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner section ends -->
+
+  <div class="chart-box">
+    <div class="container py-5">
+      <p class="chart-text text-center mt-2">Germany will not have sufficient local professionals to be able to fill all
+        vacancies, which leads to the perfect opportunity for foreign applicants to “make it overseas”.</p>
+    </div>
+  </div>
+  <div id="chart" class="diagram bg-light py-5" data-aos="fade-up" data-aos-duration="2000"></div>
+  <!-- about section ends -->
+
+  <!-- Advantages section starts -->
+  <section id="advantages" class="advantages py-5">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container">
+      <h2 class="ad-title text-center my-3">Advantages</h2>
+      <div class="row d-flex align-items-center justify-center">
+        <div class="col-lg-6 col-md-12" data-aos="zoom-out-right">
+          <div data-tilt data-tilt-axis="x" class="card my-5 w-100" style="width: 18rem;">
+            <a class="ad-icon" href="#"><i class="fa-regular fa-handshake" style="padding-top: 20px;"></i></a>
+            <div class="card-body text-center">
+              <h5 class="card-title" style="margin-top: 10px; margin-bottom: -20px;">High Quality Education</h5>
+              <p class="card-text py-4">Our very own Profitlingua language academy offers a unique educational system
+                which makes the courses as efficient as can be. Our teachers are native speakers with years of
+                experience, you will only learn what’s important and you will learn it fast! </p>
+              <!-- <div class="ad-button-box d-flex align-items-center" style="margin-top: -40px;">
+                  <a href="#" class="btn btn-primary ad-button">Read More</a>
+                  <a class="ad-button-icon" href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+                </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12" data-aos="zoom-out-right">
+          <div data-aos="zoom-out-right" data-tilt data-tilt-axis="x" class="card my-5 w-100" style="width: 18rem;">
+            <a class="ad-icon" href="#" style="margin-bottom: 0px; margin-top: 25px;"><i
+                class="fa-solid fa-mug-hot"></i></a>
+            <div class="card-body text-center">
+              <h5 class="card-title" style="margin-bottom: -10px;">Service A-Z</h5>
+              <p class="card-text py-3">We take the burden off your shoulders and assist you with all the bureaucracy.
+                Be it search for your dream employer, help with obtaining your visa or finding accommodation abroad,
+                we’re here for you.</p>
+              <!-- <div class="ad-button-box d-flex align-items-center">
+                  <a href="#" class="btn btn-primary ad-button mx-1">Read More</a>
+                  <a class="ad-button-icon" href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+                </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12" data-aos="zoom-out-right">
+          <div data-aos="zoom-out-right" data-tilt data-tilt-axis="x" class="card my-5 w-100" style="width: 18rem;">
+            <a class="ad-icon mt-2" href="#"><i class="fa-solid fa-bolt"></i></a>
+            <div class="card-body text-center">
+              <h5 class="card-title">Reaching higher goals</h5>
+              <p class="card-text mt-4">It’s not always easy to fight for yourself and negotiate the terms of your
+                employment. Let us take over and ensure the best possible conditions and salary for you. </p>
+              <!-- <div class="ad-button-box d-flex align-items-center">
+                  <a href="#" class="btn btn-primary ad-button">Read More</a>
+                  <a class="ad-button-icon" href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+                </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12" data-aos="zoom-out-right">
+          <div data-aos="zoom-out-right" data-tilt data-tilt-axis="x" class="card my-5 w-100" style="width: 18rem;">
+            <a class="ad-icon" href="#" style="margin-top: 20px;"><i class="fa-solid fa-layer-group"></i></a>
+            <div class="card-body text-center">
+              <h5 class="card-title">Personal Approach</h5>
+              <p class="card-text py-2">We will guide you and be the partner you can rely on along the whole journey.
+                All the way from your first German lessons to the beginning of your dream career, we'll be there to
+                support. </p>
+              <!-- <div class="ad-button-box d-flex align-items-center">
+                  <a href="#" class="btn btn-primary ad-button">Read More</a>
+                  <a class="ad-button-icon" href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Advantages section ends -->
+
+  <!-- Process section starts -->
+  <section id="process" class="process pb-5">
+    <div class="container">
+      <div class="row">
+        <h2 class="process__title text-center py-5">Step by step procedure</h2>
+        <div class="col-lg-4 py-2">
+          <div class="card process__card process__card__sec" data-tilt data-aos="fade-right" data-tilt
+            data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <a href="#" class="card-img-top process-card__img"><i class="fa-solid fa-book"></i></a>
+            <div class="card-body process-card__body">
+              <h5 class="card-title process-card__title py-2">German courses at ProfITlingua in Tashkent</h5>
+              <p class="card-text process-card__text">Complete the high intense courses at our language academy and
+                receive not only a recognized B1/B2 certificate, but mainly actual knowledge of German!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 py-2">
+          <div class="card process__card process__card__sec" data-tilt data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+            <a href="#" class="card-img-top process-card__img"><i class="fa-solid fa-user"></i></a>
+            <div class="card-body procees-card__body">
+              <h5 class="card-title process-card__title py-2">Finding your future employer</h5>
+              <p class="card-text process-card__text">We will already connect you with potential employers and help you
+                find the perfect match before you even leave your hometown. This way,you will have a job position
+                secured way in advance and will be able to focus solely on your studies. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 py-2">
+          <div class="card process__card process__card__sec" data-tilt data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+            <a href="#" class="card-img-top process-card__img"><i class="fa-sharp fa-solid fa-globe"></i></a>
+            <div class="card-body procees-card__body">
+              <h5 class="card-title process-card__title py-2">Relocation to Germany</h5>
+              <p class="card-text process-card__text">We will help you take care of all visa and travel connected
+                matters and assist you with everything from flight tickets to finding accommodation in Germany. We’ll be
+                your anchor on the whole new and exciting journey.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 py-2">
+          <div class="card process__card process__card__sec  mt-5" data-tilt data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+            <a href="#" class="card-img-top process-card__img"><i class="fa-sharp fa-solid fa-plane-departure"></i></a>
+            <div class="card-body procees-card__body">
+              <h5 class="card-title process-card__title py-2">Adaptation courses at KA Dresden</h5>
+              <p class="card-text process-card__text">After you have settled into your new home, we will leave you in
+                good hands of our colleagues from the Kulturakademie in Dresden. You will already know some of the
+                teachers from your courses back home, which will make the adaptation courses more pleasant and
+                efficient. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 py-2">
+          <div class="card process__card process__card__sec  mt-5" data-tilt data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+            <a href="#" class="card-img-top process-card__img"><i class="fa-solid fa-folder-open"></i></a>
+            <div class="card-body procees-card__body">
+              <h5 class="card-title process-card__title py-2">Recognition procedure</h5>
+              <p class="card-text process-card__text">The recognition procedure is divided into lectures at the
+                Kulturakademie and paid practice at a medical institution. You can complete the practical part at your
+                future work place and already start getting to know the environment as well as your new colleagues.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 py-2">
+          <div class="card process__card process__card__sec  mt-5" data-tilt data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+            <a href="#" class="card-img-top process-card__img"><i class="fa-solid fa-briefcase"></i></a>
+            <div class="card-body procees-card__body">
+              <h5 class="card-title process-card__title py-2">Beginning of successful career</h5>
+              <p class="card-text process-card__text">Congratulations, you have made it! After having completed the
+                recognition procedure, you can begin your dream career in Germany. Should you require any further
+                assistance, you can always rely on us,
+                as our partnership is for a lifetime.
+                We wish you good luck!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Process sction ends -->
+
+  <!-- Questions section starts -->
+  <section id="questions" class="questions py-5">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <h3 class="questions-title-text text-center mb-5">
+          Why is Germany the best place to live and develop a successful career?
+        </h3>
+        <div class="col-lg-6 question-img">
+          <img class="w-100 footer-img" src="https://wallpaperaccess.com/full/6800544.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <p class="questions-title">Germany is a modern and powerful country located in Central Europe. It is claimed
+            to be one of the most developed places in the world and the second most popular destination for expats. It
+            offers endless work opportunities thanks to the fact that its economy is the largest in Europe.<br><br>
+            <span>Why else do we think that Germany is the place to be? </span>
+          </p>
+          <div class="accordion accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Landscapes
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  The country offers countless beautiful holiday destinations for your weekend
+                  getaways. Should it be skiing in the Alps, sightseeing one of the many fairytale castles or enjoying
+                  the view of
+                  the North Sea, there is always plenty to see and do.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Culture
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Germany is called “the land of poets and thinkers” for a good reason. Cultural events such as the
+                  Oktoberfest and Christmas markets are phenomenal, besides there are 41 properties in Germany on the
+                  UNESCO World Heritage List.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Safety and security
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Thanks to the highly developed infrastructure, the efficient government and law enforcement system,
+                  Germany ranks as one of the safest countries in the world. Need we say more?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  High standard of living
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  There are many aspects which make Germany a place with a very high standard of
+                  living. The salaries are solid, food and services are high quality and affordable, the public
+                  transport system is
+                  efficient and the rental prices of properties are regulated. In addition to that, the german
+                  healthcare system
+                  guarantees that everyone has access to healthcare with only a small contribution, as it is mostly a
+                  state-run
+                  collective system. Wouldn’t you like to be a part of it?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Questions section ends -->
+
+  <!-- Footer section starts -->
+  <div id="contacts" class="contact pt-5 pb-3">
+    <div class="container">
+      <div class="row pb-5">
+        <h3 class="footer-title pt-3 pb-5 text-center">Contacts</h3>
+        <div class="col-lg-4">
+          <div class="footer-brand pb-3"> TRAUM <span>PERSONAL</span>GMBH</div>
+          <div class="d-flex align-items-center social">
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram mx-3"></i></a>
+            <a href="https://www.telegram.com/"><i class="fa-brands fa-telegram" style="margin-right: 20px;"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="contact-title">Traum Personal GmbH </h3>
+          <p class="address"> <strong>Address:</strong> Bambergerstraße 7</p>
+          <p class="address py-2">01187 Dresden</p>
+          <p class="address">Germany</p>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="contact-title">Connections</h3>
+          <p class="address"> <span><i class="fa-solid fa-envelope"></i></span> info@traum-personal.de</p>
+          <p class="address"> <span><i class="fa-solid fa-phone my-2"></i></span> +49 301234567</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-box text-center p-2">
+    <div class="container">
+      <p class="footer">Copyright ©2022 <a href="#home">TRAUM PERSONAL GMBH</a>. All Rights Reserved.</p>
+    </div>
+  </div>
+  <!-- Footer section ends -->
+
+  <!-- Bootstrap js connection -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!-- AOS js connection -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- js conncetion -->
+  <script src="./js/app.js"></script>
+  <!-- Vanilla -->
+  <script src="./js/vanilla-tilt.js"></script>
+</body>
+
+</html>

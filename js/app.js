@@ -3,6 +3,22 @@ console.log(window.location,'fewefw');
  let href = full_href[full_href.length - 1];
 console.log(href);
 
+let value_text = '';
+
+if(href == 'main.html' ||  href == 'forapplicants.html'){
+  value_text = 'Demand for nursing staff';
+} else {
+  value_text = 'Bedarf an Pflegepersonal';
+};
+
+let vertical_value = '';
+
+if(href == 'main.html' ||  href == 'forapplicants.html'){
+  vertical_value = 'Number of missing nursing staff in thousands';
+} else {
+  vertical_value = 'Zahl der vermissten Pflegekräfte in Tausend';
+};
+
 window.onscroll = () => {
     if (window.scrollY > 20) {
         navbar.classList.add('navbar-scroll');
@@ -65,9 +81,14 @@ xaxis: {
     ]
   }
 },
+yaxis: {
+  title: {
+    text: vertical_value,
+  },
+},
 
 title: {
-  text: href === 'main.html' ? 'Demand for nursing staff' : 'Bedarf an Pflegepersonal' ,
+  text: value_text,
   style: {
     colors: ['#F44336'],
     fontFamily: 'Montserrat',
