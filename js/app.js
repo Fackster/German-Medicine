@@ -16,7 +16,7 @@ let vertical_value = '';
 if(href == 'main.html' ||  href == 'forapplicants.html'){
   vertical_value = 'Number of missing nursing staff in thousands';
 } else {
-  vertical_value = 'Zahl der vermissten Pflegekräfte in Tausend';
+  vertical_value = 'Anzahl von fehlendem Pflegepersonal in Tausenden';
 };
 
 window.onscroll = () => {
